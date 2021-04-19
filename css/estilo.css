@@ -1,0 +1,485 @@
+/* Patrones Globales */
+
+/* Eliminar margen por defecto del BODY */
+body { margin: 0; overflow-x: hidden; }
+
+/* Tipografía: Quicksand */
+h1, h2, h3, h4, h5, h6, p, a, span, form, input, select, textarea, option, button, div { font-family: 'Quicksand', sans-serif; }
+
+/* Propiedad display: block; a todas las cajas de estructura para que se comporten como cajas */
+header, main, section, footer, aside, article, figure, figcaption, nav, div { display: block; }
+
+/* Quitar margen que traen por defecto los títulos, subtítulos y párrafos */
+h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
+
+
+
+/* Estilo Propio */
+
+/* Componente Menú Responsive */
+
+aside#menu-moviles { 
+    width: 290px; 
+    height: 100%; 
+    display: block; 
+    margin: 0; 
+    float: none; 
+    position: fixed; 
+    right: -290px; 
+    top: 0; 
+    z-index: 99999; 
+    background: #fff }
+aside#menu-moviles a#abrir-menu { 
+    height: auto; 
+    margin: 0; 
+    float: none; 
+    position: absolute; 
+    top: 25px; 
+    left: -50px; 
+    display: block; 
+    text-decoration: none; 
+    color: rgb(2, 30, 66); 
+    font-weight: 600; 
+    font-size: 2em; 
+    line-height: 1em; 
+    transition: all 0.3s ease-in; }
+aside#menu-moviles a#abrir-menu:hover { 
+    color: rgb(84, 142, 230); 
+    transition: all 0.3s ease-in }
+
+aside#menu-moviles a#cerrar-menu { 
+    height: auto; 
+    margin: 0; 
+    float: none; 
+    position: absolute; 
+    top: 25px; 
+    left: -35px; 
+    display: none; 
+    text-decoration: none; 
+    color: rgb(2, 23, 51); 
+    font-weight: 600; 
+    font-size: 2em; 
+    line-height: 1em; 
+    transition: all 0.3s ease-in; }
+aside#menu-moviles a#cerrar-menu:hover { 
+    color: rgb(69, 139, 245 );
+    transition: all 0.3s ease-in; }
+
+aside#menu-moviles nav { 
+    width: 60%; 
+    height: auto; 
+    margin: 15% 10%; 
+    float: none; 
+    position: relative; }
+aside#menu-moviles nav a { 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; 
+    color: rgb(2, 23, 51); 
+    font-weight: 600; 
+    font-size: 1em; 
+    padding: 10px 0; 
+    text-decoration: none; 
+    transition: all 0.3s ease-in; }
+aside#menu-moviles nav a:hover { 
+    color: rgb(69, 139, 245); 
+    transition: all 0.3s ease-in; }
+
+/* Componente Header con Logo y Menú */
+header { 
+    width: 100%; 
+    height: 80px; 
+    margin: 0; 
+    float: none; 
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    z-index: 99990; 
+    overflow: hidden; 
+    background: #fff }
+header div#capa-superior { 
+    width: 100%; 
+    height: 100px; 
+    display: block; 
+    margin: 0; 
+    float: none; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    z-index: 2; }
+header div#capa-superior article { 
+    width: 100%; 
+    height: 100px; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; }
+
+header div#capa-superior article figure { 
+    width: 100%; 
+    height: 100px; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    top: 10px; }
+header div#capa-superior article figure a { 
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; 
+    display: block; }
+header div#capa-superior article figure a img { 
+    width: auto; 
+    height: 60px; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; 
+    display: block; }
+
+/* Caja Main */
+main { 
+    width: 100%; 
+    height: auto; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; }
+
+/* Slick Slider */
+main section#zona-slider { 
+    width: 100%; 
+    height: 100vh; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; }
+main section#zona-slider article.slick-slider { 
+    width: 100%; 
+    height: 100vh; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; }
+main section#zona-slider article.slick-slider figure#slide-01 { 
+    width: 100%; 
+    height: 100vh; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1617618482192-54d19a80ff85?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1434&q=80') 
+    no-repeat top center; background-size: cover; }
+main section#zona-slider article.slick-slider figure#slide-02 { 
+    width: 100%; 
+    height: 100vh; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1617655388981-569d45858b26?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80')
+    no-repeat top center; background-size: cover; }
+main section#zona-slider article.slick-slider figure#slide-03 { 
+    width: 100%; 
+    height: 100vh; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1617452738733-54972595f8e5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80') 
+    no-repeat bottom center; background-size: cover; }
+
+.slick-prev { left: 25px !important; z-index: 9 !important; }
+.slick-next { right: 25px !important; z-index: 10 !important; }
+
+/* Sección 01 */
+main section#seccion-01 { 
+    width: 100%; 
+    height: 500px; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; }
+main section#seccion-01 figure#img_1 { 
+    width: 50%; 
+    height: 500px; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1617124790690-e361a887cc96?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80') 
+    no-repeat top center; background-size: cover; }
+main section#seccion-01 figure#caja_1 { 
+    width: 50%; 
+    height: 500px; 
+    margin: 0; 
+    position: relative; 
+    float: left; }
+main section#seccion-01 figure#caja_1 figure#img_2 { 
+    width: 100%; 
+    height: 250px; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1617125073219-636662a0fc44?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80')
+     no-repeat top center; background-size: cover; }
+main section#seccion-01 figure#caja_1 figure#img_3 { 
+    width: 35%; 
+    height: 250px; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1617040415471-29aed113f175?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1358&q=80')
+    no-repeat top center; background-size: cover; }
+main section#seccion-01 figure#caja_1 figure#img_4 { 
+    width: 65%; 
+    height: 250px; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1617040415789-d9616bf1e12a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80')
+    no-repeat top center; background-size: cover; }
+main section#seccion-01 figure#caja_2 { 
+    width: 70%; 
+    margin: 0 auto; 
+    padding: 80px 0 80px 0; 
+    position: relative; 
+    overflow: hidden;}
+main section#seccion-01 figure#caja_2 figure#img_5 { 
+    width: 31.5%; 
+    height: 320px; 
+    margin: 0 2.75% 2.75% 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1616998150400-ea92e8d27999?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80') 
+    no-repeat top center; background-size: cover; }
+main section#seccion-01 figure#caja_2 figure#img_6 { 
+    width: 31.5%; 
+    height: 320px; 
+    margin: 0 2.75% 2.75% 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1616998150324-850db531cd6c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80') 
+    no-repeat top center; background-size: cover; }
+main section#seccion-01 figure#caja_2 figure#img_7 { 
+    width: 31.5%; 
+    height: 320px; 
+    margin: 0 0 2.75% 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1615778662355-0a77cd0eacee?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80') 
+    no-repeat top center; background-size: cover; }
+main section#seccion-01 figure#caja_2 figure#img_8 { 
+    width: 31.5%; 
+    height: 320px; 
+    margin: 0 2.75% 0 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1606020939533-56adc6152d3f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') 
+    no-repeat top center; background-size: cover; }
+main section#seccion-01 figure#caja_2 figure#img_9 { 
+    width: 31.5%; 
+    height: 320px; 
+    margin: 0 2.75% 0 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1616751790270-5300aaf71250?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80') 
+    no-repeat top center; background-size: cover; }
+main section#seccion-01 figure#caja_2 figure#img_10 { 
+    width: 31.5%; 
+    height: 320px; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1616599032696-f08798c97388?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1346&q=80') 
+    no-repeat top center; background-size: cover; }
+main section#seccion-01 figure#caja_3 { 
+    width: 50%; 
+    height: 1400px; 
+    float: left; 
+    position: relative; }
+main section#seccion-01 figure#caja_3 figure#img_11 { 
+    width: 100%; 
+    height: 25%; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1616239385506-58f516f347ab?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80') 
+    no-repeat top center; background-size: cover;}
+main section#seccion-01 figure#caja_3 figure#img_12 { 
+    width: 100%; 
+    height: 50%; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1616424723945-0cad2faa4990?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1368&q=80') 
+    no-repeat top center; background-size: cover;}
+main section#seccion-01 figure#caja_3 figure#img_13 { 
+    width: 50%; 
+    height: 25%; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1616142931293-08951adc01ba?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80') 
+    no-repeat top center; background-size: cover;}
+main section#seccion-01 figure#caja_3 figure#img_14 { 
+    width: 50%; 
+    height: 25%; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1616093720369-b64765bfc559?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80') 
+    no-repeat top center; background-size: cover;}
+main section#seccion-01 figure#caja_4 { 
+    width: 50%; 
+    height: 1400px; 
+    float: left; 
+    position: relative; }
+main section#seccion-01 figure#caja_4 figure#img_15 { 
+    width: 50%; 
+    height: 25%; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1578167817625-f3b3dc3e1211?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1373&q=80') 
+    no-repeat top center; background-size: cover;}
+main section#seccion-01 figure#caja_4 figure#img_16 { 
+    width: 50%; 
+    height: 25%; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1615578654012-50b860d1dbfe?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') 
+    no-repeat top center; background-size: cover;}
+main section#seccion-01 figure#caja_4 figure#img_17 { 
+    width: 100%; 
+    height: 25%; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1615431302078-7d59aced61c2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80') 
+    no-repeat top center; background-size: cover;}
+main section#seccion-01 figure#caja_4 figure#img_18 { 
+    width: 100%; 
+    height: 50%; 
+    margin: 0; 
+    float: left; 
+    position: relative; 
+    background: url('https://images.unsplash.com/photo-1615136842785-ab81d1a8a934?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80') 
+    no-repeat top center; background-size: cover;}
+
+/* Zona de Media Queries */
+
+/* Tablets */
+@media only screen and (max-width: 1199px){
+    aside#menu-moviles nav a { font-size: 1.5em; }
+
+    header div#capa-superior article figure a img {margin: 0 0 0 20px; }
+
+    main section#zona-slider { 
+        margin-top: 80px; 
+        height: 48vh; }
+    main section#zona-slider article.slick-slider { 
+        height: 48vh; }
+    main section#zona-slider article.slick-slider figure#slide-01,
+    main section#zona-slider article.slick-slider figure#slide-02,
+    main section#zona-slider article.slick-slider figure#slide-03 { 
+        height: 48vh; 
+        background-position: center; }
+
+    main section#seccion-01 figure#img_1 { 
+        width: 50%; 
+        height: 250px; }
+    main section#seccion-01 figure#caja_1 { 
+        width: 50%; 
+        height: 500px; }
+    main section#seccion-01 figure#caja_1 figure#img_2 {
+         width: 100%; 
+        height: 250px; }
+    main section#seccion-01 figure#caja_1 figure#img_3 { 
+        right: 100%; 
+        width: 100%; 
+        height: 250px; }
+    main section#seccion-01 figure#caja_1 figure#img_4 { 
+        bottom: 50%; 
+        width: 100%; 
+        height: 250px; }
+    main section#seccion-01 figure#caja_2 { 
+        width: 70%; }
+    main section#seccion-01 figure#caja_2 figure#img_5 { 
+        width: 100%; 
+        margin: 0 0 5.5% 0; }
+    main section#seccion-01 figure#caja_2 figure#img_6 { 
+        width: 100%; 
+        margin: 0 0 5.5% 0; }
+    main section#seccion-01 figure#caja_2 figure#img_7 { 
+        width: 100%; 
+        margin: 0 0 5.5% 0; }
+    main section#seccion-01 figure#caja_2 figure#img_8 { 
+        width: 100%; 
+        margin: 0 0 5.5% 0; }
+    main section#seccion-01 figure#caja_2 figure#img_9 { 
+        width: 100%; 
+        margin: 0 0 5.5% 0; }
+    main section#seccion-01 figure#caja_2 figure#img_10 { 
+        width: 100%; }
+    main section#seccion-01 figure#caja_3 { 
+        width: 100%; 
+        height: 1000px; 
+        float: left; }
+    main section#seccion-01 figure#caja_3 figure#img_11 { 
+        width: 100%; 
+        height: 50%; 
+        margin: 0; 
+        float: left; }
+    main section#seccion-01 figure#caja_3 figure#img_12 { 
+        width: 50%; 
+        height: 25%; 
+        margin: 0; 
+        float: left; }
+    main section#seccion-01 figure#caja_3 figure#img_13 { 
+        width: 50%; 
+        height: 25%; 
+        margin: 0; 
+        float: left; }
+    main section#seccion-01 figure#caja_3 figure#img_14 { 
+        width: 50%; 
+        height: 25%; 
+        margin: 0; 
+        float: left; }
+    main section#seccion-01 figure#caja_4 { 
+        bottom: 50%; 
+        width: 100%; 
+        height: 1000px; 
+        float: left; 
+        margin-bottom: -40%; }
+    main section#seccion-01 figure#caja_4 figure#img_15 { 
+        width: 50%; 
+        height: 25%; 
+        margin: 0; 
+        float: right; }
+    main section#seccion-01 figure#caja_4 figure#img_16 { 
+        top: 25%; 
+        width: 50%; 
+        height: 25%; 
+        margin: 0; 
+        float: right; }
+    main section#seccion-01 figure#caja_4 figure#img_17 { 
+        width: 50%; 
+        height: 25%; 
+        margin: 0; 
+        float: right; }
+    main section#seccion-01 figure#caja_4 figure#img_18 { 
+        width: 100%; 
+        height: 50%; 
+        margin: 0; 
+        float: left; }
+}
+
+@media only screen and (max-width: 799px){
+
+}
+
+/* Móviles Grandes */
+@media only screen and (max-width: 499px){
+  
+}
+
+/* Móviles Pequeños */
+@media only screen and (max-width: 399px){
+
+}
